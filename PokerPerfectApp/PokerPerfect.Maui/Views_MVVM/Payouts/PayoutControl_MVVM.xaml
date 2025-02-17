@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:vm="clr-namespace:PokerPerfect.Maui.ViewModels.Payouts"
+             x:DataType="vm:PayoutViewModel"
+             x:Class="PokerPerfect.Maui.Views_MVVM.Payouts.PayoutControl_MVVM">
+
+  <Grid Padding="1" RowDefinitions="*, 50" ColumnDefinitions="*" RowSpacing="5">
+
+    <VerticalStackLayout Spacing="5" Margin="10, 10, 10, 0">
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Finish" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="100" />
+          <Entry VerticalOptions="Center" Text="{Binding Payout.PayoutNo}" Focused="EntryFocused" />
+        </HorizontalStackLayout>
+      </Frame>
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Start" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="100" />
+          <Entry VerticalOptions="Center" Text="{Binding Payout.Start}" Focused="EntryFocused" />
+        </HorizontalStackLayout>
+      </Frame>
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Through" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="100" />
+          <Entry VerticalOptions="Center" Text="{Binding Payout.Through}" Focused="EntryFocused" />
+        </HorizontalStackLayout>
+      </Frame>
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Percent" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="100" />
+          <Entry VerticalOptions="Center" Text="{Binding Payout.Percent, StringFormat='{0}%'}" Focused="EntryFocused" />
+        </HorizontalStackLayout>
+      </Frame>
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Amount" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="100" />
+          <Entry VerticalOptions="Center" Text="{Binding Payout.Amount, StringFormat='${0:F2}'}" Focused="EntryFocused" />
+        </HorizontalStackLayout>
+      </Frame>
+
+    </VerticalStackLayout>
+
+    <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="End">
+
+      <Grid Padding="1" RowDefinitions="*" ColumnDefinitions="*, *" RowSpacing="5" ColumnSpacing="2">
+        <Button Grid.Row="0" Grid.Column="0" x:Name="btnSave" Text="Save" />
+        <Button Grid.Row="0" Grid.Column="1" Text="Cancel" Command="{Binding BackToPayoutsCommand}" />
+      </Grid>
+    </StackLayout>
+
+  </Grid>
+
+</ContentView>

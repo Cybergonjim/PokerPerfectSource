@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" 
+             xmlns:vm="clr-namespace:PokerPerfect.Maui.ViewModels.Contacts" 
+             x:DataType="vm:ContactViewModel" 
+             x:Class="PokerPerfect.Maui.Views_MVVM.Contacts.ContactControl_MVVM">
+
+  <Grid Padding="1" RowDefinitions="*, 50" ColumnDefinitions="*" RowSpacing="5">
+
+    <VerticalStackLayout Spacing="10" Margin="20, 20, 20, 0" Grid.Row="0" Grid.Column="0">
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Name" VerticalOptions="Center" WidthRequest="60" />
+          <Entry VerticalOptions="Center" Text="{Binding Contact.Name}" Focused="EntryFocused">
+            <Entry.Behaviors>
+              <toolkit:TextValidationBehavior x:Name="nameValidator" Flags="ValidateOnAttaching,ValidateOnValueChanged" MinimumLength="1" IsValid="{Binding IsNameProvided}" />
+            </Entry.Behaviors>
+          </Entry>
+        </HorizontalStackLayout>
+      </Frame>
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Handle" VerticalOptions="Center" WidthRequest="60" />
+          <Entry VerticalOptions="Center" Text="{Binding Contact.Handle}" Focused="EntryFocused" />
+        </HorizontalStackLayout>
+      </Frame>
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Email" VerticalOptions="Center" WidthRequest="60" />
+          <Entry VerticalOptions="Center" Text="{Binding Contact.Email}" Focused="EntryFocused">
+            <Entry.Behaviors>
+              <toolkit:MultiValidationBehavior x:Name="emailValidator" Flags="ValidateOnAttaching,ValidateOnValueChanged">
+                <toolkit:TextValidationBehavior Flags="ValidateOnAttaching,ValidateOnValueChanged" MinimumLength="1" toolkit:MultiValidationBehavior.Error="Email is required." IsValid="{Binding IsEmailProvided}" />
+                <toolkit:EmailValidationBehavior Flags="ValidateOnAttaching,ValidateOnValueChanged" toolkit:MultiValidationBehavior.Error="Email format is invalid." IsValid="{Binding IsEmailFormatValid}" />
+              </toolkit:MultiValidationBehavior>
+            </Entry.Behaviors>
+          </Entry>
+
+        </HorizontalStackLayout>
+      </Frame>
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Phone" VerticalOptions="Center" WidthRequest="60" />
+          <Entry VerticalOptions="Center" Text="{Binding Contact.Phone}" Focused="EntryFocused" />
+        </HorizontalStackLayout>
+      </Frame>
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Address" VerticalOptions="Center" WidthRequest="60" />
+          <Entry VerticalOptions="Center" Text="{Binding Contact.Address}" Focused="EntryFocused" />
+        </HorizontalStackLayout>
+      </Frame>
+
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Label Text="Use" VerticalOptions="Center" WidthRequest="60" />
+          <CheckBox x:Name="checkbox" Grid.Column="2" IsChecked="{Binding Contact.IsChecked}" />
+        </HorizontalStackLayout>
+      </Frame>
+
+    </VerticalStackLayout>
+
+    <StackLayout Grid.Row="1" Grid.Column="0">
+      <Grid Padding="1" RowDefinitions="*" ColumnDefinitions="*, *" RowSpacing="5" ColumnSpacing="2">
+        <Button Grid.Row="0" Grid.Column="0" x:Name="btnSave" Text="Save" />
+        <Button Grid.Row="0" Grid.Column="1" Text="Cancel" Command="{Binding BackToContactsCommand}" />
+      </Grid>
+    </StackLayout>
+
+  </Grid>
+
+</ContentView>

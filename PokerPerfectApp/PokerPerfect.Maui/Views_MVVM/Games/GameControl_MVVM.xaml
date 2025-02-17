@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:vm="clr-namespace:PokerPerfect.Maui.ViewModels.Games"
+             x:DataType="vm:GameViewModel"
+             x:Class="PokerPerfect.Maui.Views_MVVM.Games.GameControl_MVVM">
+    
+    <Grid Padding="1" RowDefinitions="*, 100" ColumnDefinitions="*" RowSpacing="1">
+
+        <!--record view-->
+        <ScrollView>
+            <VerticalStackLayout Spacing="5" Margin="10, 10, 10, 0" Grid.Row="0" Grid.Column="0">
+                <VerticalStackLayout>
+
+                    <!--general heading-->
+                    <Frame Padding="10, 2, 10, 2" BackgroundColor="GainsBoro">
+                        <Grid RowDefinitions="*" ColumnDefinitions="*, *, *, *">
+                            <Label Text="General" FontAttributes="Bold" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+                            <Button Clicked="GeneralClicked" HeightRequest="20" HorizontalOptions="End" WidthRequest="20" Grid.Row="0" Grid.Column="3"/>
+                        </Grid>
+                    </Frame>
+
+                    <!--general details-->
+                    <VerticalStackLayout x:Name="GeneralStack" IsVisible='true'>
+                        <Frame Padding="10, 2, 10, 2">
+                            <Grid Padding="1" RowDefinitions="*, *, *, *" ColumnDefinitions="*, *, *, *" RowSpacing="1">
+
+                                <Label Text="Name " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="0" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.Name}" FontAttributes="None" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Focused="EntryFocused"/>
+
+                                <Label Text="Date  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="1" Grid.Column="0"/>
+                                <DatePicker MinimumDate="07/19/2023" MaximumDate="12/31/2025" Format="MM/dd/yyyy" Grid.Row="1" Grid.Column="1" Date="{Binding Game.Date}" />
+                                <Label Text="Start  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="1" Grid.Column="2"/>
+                                <TimePicker Time="{Binding Game.StartTimeSpan}" Format="t" Grid.Row="1" Grid.Column="3" />
+
+                                <Label Text="Game Type  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="2" Grid.Column="2"/>
+                                <Picker Title="Select a Type" SelectedIndex="{Binding Game.GameType}" Grid.Row="2" Grid.Column="3">
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Cash</x:String>
+                                            <x:String>Rebuy</x:String>
+                                            <x:String>Rebuy+Addon</x:String>
+                                            <x:String>Freezeout</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
+                                <Label Text="Buy In  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="2" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.BuyIn, StringFormat='${0:F2}'}" Grid.Row="2" Grid.Column="1" Focused="EntryFocused"/>
+
+                                <Label Text="Chipset  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="3" Grid.Column="0"/>
+                                <Picker x:Name="ChipsetNamesPicker" Title="Select a Chipset" SelectedIndex="{Binding Game.ChipSet}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3"/>
+
+                            </Grid>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!--space-->
+                    <VerticalStackLayout Spacing="5" Margin="10, 10, 10, 0" Grid.Row="0" Grid.Column="0"/>
+
+                    <!--initial heading-->
+                    <Frame Padding="10, 2, 10, 2" BackgroundColor="GainsBoro">
+                        <Grid RowDefinitions="*" ColumnDefinitions="*, *, *, *">
+                            <Label Text="Initial" FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+                            <Button Clicked="InitailClicked" HeightRequest="20" HorizontalOptions="End" WidthRequest="20" Grid.Row="0" Grid.Column="3"/>
+                        </Grid>
+                    </Frame>
+
+                    <!--inital details-->
+                    <VerticalStackLayout x:Name="InitialStack" IsVisible='true'>
+                        <Frame Padding="10, 2, 10, 2">
+                            <Grid Padding="1" RowDefinitions="*, *" ColumnDefinitions="*, *, *, *" RowSpacing="1">
+                                <Label Text="Players  " FontAttributes="Bold"  VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="0" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.PlayersExp}" Grid.Row="0" Grid.Column="1" Focused="EntryFocused"/>
+
+                                <Label Text="Big Blind  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="0" Grid.Column="2"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.BlindStart}" Grid.Row="0" Grid.Column="3" Focused="EntryFocused"/>
+
+                                <Label Text="Chips  " FontAttributes="Bold"  VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="1" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.ChipsStart, StringFormat='{0:N0}'}" Grid.Row="1" Grid.Column="1" Focused="EntryFocused"/>
+
+                                <Label Text="Rebuys  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="1" Grid.Column="2"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.Rebuys}" Grid.Row="1" Grid.Column="3" Focused="EntryFocused"/>
+                            </Grid>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!--space-->
+                    <VerticalStackLayout Spacing="5" Margin="10, 10, 10, 0" Grid.Row="0" Grid.Column="0"/>
+                    
+                    <!--timers heading-->
+                    <Frame Padding="10, 2, 10, 2" BackgroundColor="GainsBoro">
+                        <Grid RowDefinitions="*" ColumnDefinitions="*, *, *, *">
+                            <Label Text="Timers" FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+                            <Button Clicked="TimersClicked" HeightRequest="20" HorizontalOptions="End" WidthRequest="20" Grid.Row="0" Grid.Column="3"/>
+                        </Grid>
+                    </Frame>
+
+                    <!--timers details-->
+                    <VerticalStackLayout x:Name="TimersStack" IsVisible='true'>
+                        <Frame Padding="10, 2, 10, 2">
+                            <Grid Padding="1" RowDefinitions="*, *" ColumnDefinitions="*, *, *, *" RowSpacing="1">
+                                <Label Text="Blind  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="0" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.BlindTime, StringFormat='{0} minutes'}" Grid.Row="0" Grid.Column="1" Focused="EntryFocused"/>
+
+                                <Label Text="Bet  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="1" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.BetTime, StringFormat='{0} seconds'}" Grid.Row="1" Grid.Column="1" Focused="EntryFocused"/>
+
+                                <Label Text="Break  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="0" Grid.Column="2"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.BreakTime, StringFormat='{0} minutes'}" Grid.Row="0" Grid.Column="3" Focused="EntryFocused"/>
+
+                                <Label Text="Duration  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="1" Grid.Column="2"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.DurationExp, StringFormat='{0} minutes'}" Grid.Row="1" Grid.Column="3" Focused="EntryFocused"/>
+                            </Grid>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!--space-->
+                    <VerticalStackLayout Spacing="5" Margin="10, 10, 10, 0" Grid.Row="0" Grid.Column="0"/>
+                    
+                    <!--rebuys heading-->
+                    <Frame Padding="10, 2, 10, 2" BackgroundColor="GainsBoro">
+                        <Grid RowDefinitions="*" ColumnDefinitions="*, *, *, *">
+                            <Label Text="Rebuys" FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/> 
+                            <Button Clicked="RebuysClicked" HeightRequest="20" HorizontalOptions="End" WidthRequest="20" Grid.Row="0" Grid.Column="3"/>
+                        </Grid>
+                    </Frame>
+
+                    <!--rebuys details-->
+                    <VerticalStackLayout x:Name="RebuysStack" IsVisible='true'>
+                        <Frame Padding="10, 2, 10, 2">
+                            <Grid Padding="1" RowDefinitions="*, *" ColumnDefinitions="*, *, *, *" RowSpacing="1">
+                                <Label Text="Amount  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="0" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.RebuyAmount, StringFormat='${0:F2}'}" Grid.Row="0" Grid.Column="1" Focused="EntryFocused"/>
+
+                                <Label Text="Chips  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="1" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.RebuyChips, StringFormat='{0:N0}'}" Grid.Row="1" Grid.Column="1" Focused="EntryFocused"/>
+
+                                <Label Text="Expected  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="0" Grid.Column="2"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.RebuyExp}" Grid.Row="0" Grid.Column="3" Focused="EntryFocused"/>
+                            </Grid>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!--space-->
+                    <VerticalStackLayout Spacing="5" Margin="10, 10, 10, 0" Grid.Row="0" Grid.Column="0"/>
+                    
+                    <!--addons heading-->
+                    <Frame Padding="10, 2, 10, 2" BackgroundColor="GainsBoro">
+                        <Grid RowDefinitions="*" ColumnDefinitions="*, *, *, *">
+                            <Label Text="Addons" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+                            <Button Clicked="AddonsClicked" HeightRequest="20" HorizontalOptions="End" WidthRequest="20" Grid.Row="0" Grid.Column="3"/>
+                        </Grid>
+                    </Frame>
+            
+                    <!--addons details-->
+                    <VerticalStackLayout x:Name="AddonsStack" IsVisible='true'>
+                        <Frame Padding="10, 2, 10, 2">
+                            <Grid Padding="1" RowDefinitions="*, *" ColumnDefinitions="*, *, *, *" RowSpacing="1">
+                                <Label Text="Amount  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="0" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.AddonAmount, StringFormat='${0:F2}'}" Grid.Row="0" Grid.Column="1" Focused="EntryFocused"/>
+
+                                <Label Text="Expected  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="0" Grid.Column="2"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.AddonExp}" Grid.Row="0" Grid.Column="3" Focused="EntryFocused"/>
+
+                                <Label Text="Chips  " FontAttributes="Bold" VerticalOptions="Center"  HorizontalOptions="End" Grid.Row="1" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.AddonChips, StringFormat='{0:N0}'}" Grid.Row="1" Grid.Column="1" Focused="EntryFocused"/>
+                            </Grid>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!--space-->
+                    <VerticalStackLayout Spacing="5" Margin="10, 10, 10, 0" Grid.Row="0" Grid.Column="0"/>
+
+                    <!--finish heading-->
+                    <Frame Padding="10, 2, 10, 2" BackgroundColor="GainsBoro">
+                        <Grid RowDefinitions="*" ColumnDefinitions="*, *, *, *">
+                            <Label Text="Finish" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+                            <Button Clicked="FinishClicked" HeightRequest="20" HorizontalOptions="End" WidthRequest="20" Grid.Row="0" Grid.Column="3"/>
+                        </Grid>
+                    </Frame>
+
+                    <!--finish details-->
+                    <VerticalStackLayout x:Name="FinishStack" IsVisible='true'>
+                        <Frame Padding="10, 2, 10, 2">
+                            <Grid Padding="1" RowDefinitions="*, *" ColumnDefinitions="*, *, *, *" RowSpacing="1">
+                                <Label Text="Prize Pool  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="0" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.PrizePool, StringFormat='${0:F2}'}" Grid.Row="0" Grid.Column="1" Focused="EntryFocused"/>
+
+                                <Label Text="Finish  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End"  Grid.Row="0" Grid.Column="2"/>
+                                <TimePicker Time="{Binding Game.FinishTimeSpan}" Format="t"  Grid.Row="0" Grid.Column="3" />
+
+                                <Label Text="Players Left  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End"  Grid.Row="1" Grid.Column="0"/>
+                                <Entry VerticalOptions="Center" Text="{Binding Game.PlayerCount}" Grid.Row="1" Grid.Column="1" Focused="EntryFocused"/>
+                            </Grid>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!--bottom buttons-->
+        <StackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="End">
+            <Grid Padding="1" RowDefinitions="*,*" ColumnDefinitions="*, *, *" RowSpacing="5" ColumnSpacing="2">
+                <Button Grid.Row="0" Grid.Column="0" Command="{Binding EditPlayersCommand}" Text="Players"/>
+                <Button Grid.Row="0" Grid.Column="1" Command="{Binding EditTablesCommand}" Text="Tables"/>
+                <Button Grid.Row="0" Grid.Column="2" Command="{Binding EditPayoutsCommand}" Text="Payouts"/>
+                <Button Grid.Row="1" Grid.Column="0" Command="{Binding EditBlindsCommand}" Text="Blinds"/>
+                <Button Grid.Row="1" Grid.Column="1" x:Name="btnSave" Text="Save"/>
+                <Button Grid.Row="1" Grid.Column="2" Text="Cancel" Command="{Binding BackToGamesCommand}"/>
+            </Grid>
+        </StackLayout>
+
+    </Grid>
+
+</ContentView>

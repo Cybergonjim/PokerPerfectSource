@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" 
+             xmlns:vm="clr-namespace:PokerPerfect.Maui.ViewModels.Chips" 
+             xmlns:controls="clr-namespace:Maui.ColorPicker;assembly=Maui.ColorPicker" 
+             x:DataType="vm:ChipViewModel" 
+             x:Class="PokerPerfect.Maui.Views_MVVM.Chips.ChipControl_MVVM">
+
+  <Grid Padding="1" RowDefinitions="*,350, 50" ColumnDefinitions="*" RowSpacing="1">
+
+    <!--record view-->
+    <VerticalStackLayout Spacing="5" Margin="10, 10, 10, 0" Grid.Row="0">
+
+      <!--header-->
+      <Frame Padding="10, 2, 10, 2">
+        <HorizontalStackLayout>
+          <Grid RowDefinitions="*" ColumnSpacing="10" ColumnDefinitions="*, *, *, *, *">
+            <Label Grid.Column="0" Text="Denomination" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="100" />
+            <Entry Grid.Column="1" x:Name="DenomEntry" VerticalOptions="Center" Text="{Binding Chip.Denomination}" Focused="EntryFocused" PropertyChanged="DenomEntryPropertyChanged" WidthRequest="60" />
+            <Label Grid.Column="2" Text="R" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="50" />
+            <Label Grid.Column="3" Text="G" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="50" />
+            <Label Grid.Column="4" Text="B" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="60" />
+          </Grid>
+        </HorizontalStackLayout>
+      </Frame>
+
+      <!--base info-->
+      <Frame Padding="10, 2, 10, 2" HeightRequest="50">
+        <HorizontalStackLayout>
+          <Grid RowDefinitions="*" ColumnSpacing="10" ColumnDefinitions="*, *, *, *, *">
+            <Label Text="Base Color" Grid.Column="0" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="100" />
+            <Button x:Name="BaseButton" Text="" Grid.Column="1" WidthRequest="50" HeightRequest="30" BackgroundColor="{Binding Chip.ColorBaseRGB, Mode=TwoWay}" Clicked="BaseBtnColorClicked" />
+            <Entry x:Name="BaseEntryR" Grid.Column="2" VerticalOptions="Center" WidthRequest="50" Text="{Binding Chip.ColorBaseR, Mode=TwoWay}" Focused="EntryFocused" PropertyChanged="BaseRGBEntryChanged" />
+            <Entry x:Name="BaseEntryG" Grid.Column="3" VerticalOptions="Center" WidthRequest="50" Text="{Binding Chip.ColorBaseG, Mode=TwoWay}" Focused="EntryFocused" PropertyChanged="BaseRGBEntryChanged" />
+            <Entry x:Name="BaseEntryB" Grid.Column="4" VerticalOptions="Center" WidthRequest="50" Text="{Binding Chip.ColorBaseB, Mode=TwoWay}" Focused="EntryFocused" PropertyChanged="BaseRGBEntryChanged" />
+          </Grid>
+        </HorizontalStackLayout>
+      </Frame>
+
+      <!--spoke info-->
+      <Frame Padding="10, 2, 10, 2" HeightRequest="50">
+        <HorizontalStackLayout>
+          <Grid RowDefinitions="*" ColumnSpacing="10" ColumnDefinitions="*, *, *, *, *">
+            <Label Text="Spoke Color" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="100" />
+            <Button x:Name="SpokeButton" Text="" Grid.Column="1" WidthRequest="50" HeightRequest="30" BackgroundColor="{Binding Chip.ColorSpokeRGB, Mode=TwoWay}" Clicked="SpokeBtnColorClicked" />
+            <Entry x:Name="SpokeEntryR" Grid.Column="2" VerticalOptions="Center" WidthRequest="50" Text="{Binding Chip.ColorSpokeR, Mode=TwoWay}" Focused="EntryFocused" PropertyChanged="SpokeRGBEntryChanged" />
+            <Entry x:Name="SpokeEntryG" Grid.Column="3" VerticalOptions="Center" WidthRequest="50" Text="{Binding Chip.ColorSpokeG, Mode=TwoWay}" Focused="EntryFocused" PropertyChanged="SpokeRGBEntryChanged" />
+            <Entry x:Name="SpokeEntryB" Grid.Column="4" VerticalOptions="Center" WidthRequest="50" Text="{Binding Chip.ColorSpokeB, Mode=TwoWay}" Focused="EntryFocused" PropertyChanged="SpokeRGBEntryChanged" />
+          </Grid>
+        </HorizontalStackLayout>
+      </Frame>
+
+      <!--dot info-->
+      <Frame Padding="10, 2, 10, 2" HeightRequest="50">
+        <HorizontalStackLayout>
+          <Grid RowDefinitions="*" ColumnSpacing="10" ColumnDefinitions="*, *, *, *, *">
+            <Label Grid.Column="0" Text="Dot Color" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="100" />
+            <Button x:Name="DotButton" Text="" Grid.Column="1" WidthRequest="50" HeightRequest="30" BackgroundColor="{Binding Chip.ColorDotRGB, Mode=TwoWay}" Clicked="DotBtnColorClicked" />
+            <Entry x:Name="DotEntryR" Grid.Column="2" VerticalOptions="Center" WidthRequest="50" Text="{Binding Chip.ColorDotR, Mode=TwoWay}" Focused="EntryFocused" PropertyChanged="DotRGBEntryChanged" />
+            <Entry x:Name="DotEntryG" Grid.Column="3" VerticalOptions="Center" WidthRequest="50" Text="{Binding Chip.ColorDotG, Mode=TwoWay}" Focused="EntryFocused" PropertyChanged="DotRGBEntryChanged" />
+            <Entry x:Name="DotEntryB" Grid.Column="4" VerticalOptions="Center" WidthRequest="50" Text="{Binding Chip.ColorDotB, Mode=TwoWay}" Focused="EntryFocused" PropertyChanged="DotRGBEntryChanged" />
+          </Grid>
+        </HorizontalStackLayout>
+      </Frame>
+
+      <!--images-->
+      <Grid Padding="1" RowDefinitions="*" ColumnDefinitions="*" RowSpacing="5">
+        <Image x:Name="BaseImage" Grid.Row="0" Grid.Column="0" Source="chip_base.png" HeightRequest="200" HorizontalOptions="Center" />
+        <Image x:Name="SpokeImage" Grid.Row="0" Grid.Column="0" Source="chip_spoke.png" HeightRequest="200" HorizontalOptions="Center" />
+        <Image x:Name="DotImage" Grid.Row="0" Grid.Column="0" Source="chip_dot.png" HeightRequest="200" HorizontalOptions="Center" />
+        <Image Grid.Row="0" Grid.Column="0" Source="chip_ring.png" HeightRequest="200" HorizontalOptions="Center">
+          <Image.Behaviors>
+            <toolkit:IconTintColorBehavior TintColor="Gold" />
+          </Image.Behaviors>
+        </Image>
+        <Image Grid.Row="0" Grid.Column="0" Source="chip_face.png" HeightRequest="200" HorizontalOptions="Center">
+          <Image.Behaviors>
+            <toolkit:IconTintColorBehavior TintColor="Beige" />
+          </Image.Behaviors>
+        </Image>
+        <Label x:Name="DenomLabel" Text="{Binding Chip.Denomination}" Grid.Row="0" Grid.Column="0" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" />
+      </Grid>
+
+    </VerticalStackLayout>
+
+    <!--color picker-->
+    <Border Grid.Row="1" Grid.Column="0" x:Name="ColorPickerHolderFrame" HeightRequest="250" HorizontalOptions="Center" VerticalOptions="End" WidthRequest="350">
+      <controls:ColorPicker x:Name="ColorPicker" ColorFlowDirection="Horizontal" ColorSpectrumStyle="TintToHueToShadeStyle" PickedColorChanged="ColorPickerChanged" PointerRingBorderUnits="0.3" PointerRingDiameterUnits="0.7">
+        <controls:ColorPicker.BaseColorList>
+          <x:Array Type="{x:Type x:String}">
+            <x:String>#ff0000</x:String>
+            <x:String>#ffff00</x:String>
+            <x:String>#00ff00</x:String>
+            <x:String>#00ffff</x:String>
+            <x:String>#0000ff</x:String>
+            <x:String>#ff00ff</x:String>
+            <x:String>#ff0000</x:String>
+          </x:Array>
+        </controls:ColorPicker.BaseColorList>
+      </controls:ColorPicker>
+    </Border>
+
+    <!--bottom buttons-->
+    <StackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="End">
+      <Grid Padding="1" RowDefinitions="*" ColumnDefinitions="*, *" RowSpacing="5" ColumnSpacing="2">
+        <Button Grid.Row="0" Grid.Column="0" x:Name="btnSave" Text="Save" />
+        <Button Grid.Row="0" Grid.Column="1" Text="Cancel" Command="{Binding BackToChipsCommand}" />
+      </Grid>
+    </StackLayout>
+
+  </Grid>
+</ContentView>

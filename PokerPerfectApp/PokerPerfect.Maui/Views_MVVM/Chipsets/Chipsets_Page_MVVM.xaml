@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+						 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+						 xmlns:vm="clr-namespace:PokerPerfect.Maui.ViewModels.Chipsets" 
+						 xmlns:m="clr-namespace:PokerPerfect.CoreBusiness;assembly=PokerPerfect.CoreBusiness" 
+						 x:DataType="vm:ChipsetsViewModel" 
+						 x:Class="PokerPerfect.Maui.Views_MVVM.Chipsets.Chipsets_Page_MVVM" 
+						 Title="Chipsets">
+	
+	<Grid Padding="1" RowDefinitions="54, *, 50" ColumnDefinitions="*" RowSpacing="5">
+
+		<!--heading-->
+		<StackLayout Grid.Row="0" Grid.Column="0">
+			<HorizontalStackLayout>
+				<Frame Margin="0,0,0,0" Grid.Row="0" BackgroundColor="LightGreen">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="*" />
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="80" />
+							<ColumnDefinition Width="271" />
+						</Grid.ColumnDefinitions>
+						<Label Grid.Column="0" Text="Description" FontAttributes="Bold" HorizontalOptions="Start" />
+						<Label Grid.Column="1" Text="Denominations" FontAttributes="Bold" HorizontalOptions="Center" />
+					</Grid>
+				</Frame>
+				</HorizontalStackLayout>
+		</StackLayout>
+		
+		<!--table view-->
+		<CollectionView x:Name="ChipsetsCollection" ItemsSource="{Binding Chipsets}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" Grid.Row="1" Grid.Column="0">
+			<CollectionView.ItemTemplate>
+				<DataTemplate x:DataType="m:Chipset">
+					<StackLayout>
+						<SwipeView>
+							<SwipeView.RightItems>
+								<SwipeItems>
+									<SwipeItem Text="Edit" IsDestructive="False" BackgroundColor="Green" Command="{Binding Source={x:Reference ChipsetsCollection}, Path=BindingContext.GotoEditChipsetCommand}" CommandParameter="{Binding ChipsetId}" />
+									<SwipeItem Text="Delete" IsDestructive="True" BackgroundColor="Red" Command="{Binding Source={x:Reference ChipsetsCollection}, Path=BindingContext.DeleteChipsetCommand}" CommandParameter="{Binding ChipsetId}" />
+								</SwipeItems>
+							</SwipeView.RightItems>
+							<StackLayout>
+								<Frame Margin="0,0,0,0" BackgroundColor="Transparent">
+									<StackLayout Orientation="Horizontal" Spacing="1">
+										<Grid>
+											<Grid.RowDefinitions>
+												<RowDefinition Height="25" />
+											</Grid.RowDefinitions>
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="80" />
+												<ColumnDefinition Width="271" />
+											</Grid.ColumnDefinitions>
+											<Label Grid.Column="0" Text="{Binding Description}" />
+											<Label Grid.Column="1" Text="{Binding Denominations}" HorizontalOptions="Center" />
+										</Grid>
+									</StackLayout>
+								</Frame>
+							</StackLayout>
+						</SwipeView>
+					</StackLayout>
+				</DataTemplate>
+			</CollectionView.ItemTemplate>
+		</CollectionView>
+		
+		<!--Buttom buttons-->
+		<StackLayout Grid.Row="3" Grid.Column="0">
+			<Grid Padding="1" RowDefinitions="*" ColumnDefinitions="*, *, *, *" RowSpacing="5" ColumnSpacing="2">
+        <Button Grid.Row="0" Grid.Column="0" Text="Copy" Command="{Binding GotoCopyChipsetCommand}" />
+        <Button Grid.Row="0" Grid.Column="1" Text="Add" Command="{Binding GotoAddChipsetCommand}" />
+        <Button Grid.Row="0" Grid.Column="2" Text="Back" Command="{Binding GotoHomeCommand}" />
+				<Button Grid.Row="0" Grid.Column="3" Text="Chips" Command="{Binding GotoChipsCommand}" />
+			</Grid>
+		</StackLayout>
+		
+	</Grid>
+	
+</ContentPage>

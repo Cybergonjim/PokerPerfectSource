@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:vm="clr-namespace:PokerPerfect.Maui.ViewModels.Chipsets"
+             x:DataType="vm:ChipsetViewModel"
+             x:Class="PokerPerfect.Maui.Views_MVVM.Chipsets.ChipsetControl_MVVM">
+
+  <Grid Padding="1" RowDefinitions="*, 50" ColumnDefinitions="*" RowSpacing="5">
+
+    <VerticalStackLayout Spacing="5" Margin="10, 10, 10, 0">
+
+      <Frame Padding="10, 2, 10, 2">
+        <Grid Padding="1" RowDefinitions="*, *" ColumnDefinitions="100, *" RowSpacing="5">
+          <Label Text="Description  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="0" Grid.Column="0" />
+          <Entry VerticalOptions="Center" Text="{Binding Chipset.Description}" Grid.Row="0" Grid.Column="1" Focused="EntryFocused" />
+          <Label Text="Denominations  " FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" WidthRequest="100" Grid.Row="1" Grid.Column="0" />
+          <Entry VerticalOptions="Center" Text="{Binding Chipset.Denominations}" Grid.Row="1" Grid.Column="1" Focused="EntryFocused" />
+        </Grid>
+      </Frame>
+
+    </VerticalStackLayout>
+
+    <StackLayout Grid.Row="1" Grid.Column="0">
+      <Grid Padding="1" RowDefinitions="*" ColumnDefinitions="*, *" RowSpacing="5" ColumnSpacing="2">
+        <Button Grid.Row="0" Grid.Column="0" x:Name="btnSave" Text="Save" />
+        <Button Grid.Row="0" Grid.Column="1" Text="Cancel" Command="{Binding BackToChipsetsCommand}" />
+      </Grid>
+    </StackLayout>
+    
+  </Grid>
+
+</ContentView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokerPerfect.Maui.Views_MVVM.About.AboutPage" 
+             Title="About">
+
+  <Grid Padding="1,1,1,10" RowDefinitions="400, *" ColumnDefinitions="*" RowSpacing="5">
+
+    <VerticalStackLayout Grid.Row="0" Grid.Column="0" Padding="20" Spacing="5" HorizontalOptions="Center">
+
+      <!-- App Icon -->
+      <Image Source="logo.png" HeightRequest="200" WidthRequest="600" />
+
+      <!-- Version Info -->
+      <Label Text="Version 1.0.0" FontSize="16" HorizontalOptions="Center" />
+
+      <!-- App Description -->
+      <Label Text="This app allows users to connect to a web server and retrieve data dynamically." FontSize="14" HorizontalTextAlignment="Center" Padding="10" />
+
+      <!-- Developer Info -->
+      <Label Text="Developed by: Calvin Day" FontSize="14" HorizontalOptions="Center" />
+
+      <!-- Support/Contact -->
+      <Label Text="Support: support@cybergon.us" FontSize="14" TextColor="Blue" />
+
+      <!-- Copyright -->
+      <Label Text="© 2025 Cybergon LLC. All rights reserved." FontSize="12" HorizontalOptions="Center" />
+
+      <Label Text="IP Address:" FontSize="18" />
+
+      <Label x:Name="savedFeatureLabel" FontSize="16" TextColor="Gray" />
+
+    </VerticalStackLayout>
+
+    <VerticalStackLayout Grid.Row="1" Grid.Column="0" Spacing="10" HorizontalOptions="Center" VerticalOptions="End">
+      <Button Text="Scan IP Address" Clicked="SavePreference_Clicked" WidthRequest="300" />
+      <Button Text="Close" Clicked="CloseButton_Clicked" WidthRequest="300" />
+    </VerticalStackLayout>
+  </Grid>
+
+</ContentPage>

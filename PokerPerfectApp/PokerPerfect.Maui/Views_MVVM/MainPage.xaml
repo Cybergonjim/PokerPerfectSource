@@ -1,0 +1,37 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="PokerPerfect.Maui.Views_MVVM.MainPage" 
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+  <Grid Padding="10" RowDefinitions="*, Auto" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+
+    <!-- Main Content -->
+    <Grid RowDefinitions="250, *" ColumnDefinitions="*" RowSpacing="5" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Grid.Row="0">
+
+      <!-- Logo -->
+      <VerticalStackLayout BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+        <Image Source="logo.png" HeightRequest="240" WidthRequest="400" />
+        <Label FontSize="32" TextColor="#026B02" VerticalOptions="Start" HorizontalTextAlignment="Center">
+        </Label>
+      </VerticalStackLayout>
+
+      <!-- Buttons -->
+      <VerticalStackLayout Grid.Row="1" Grid.Column="0" Spacing="10" HorizontalOptions="Center">
+        <Button x:Name="ContactsBtn" Text="Contacts" SemanticProperties.Hint="Go to PokerPerfect." Clicked="OnContactClicked" WidthRequest="300" HorizontalOptions="Center" />
+        <Button x:Name="GamesBtn" Text="Games" SemanticProperties.Hint="Go to Games." Clicked="OnGameClicked" WidthRequest="300" HorizontalOptions="Center" />
+        <Button x:Name="ChipsetsBtn" Text="Chipsets" SemanticProperties.Hint="Go to Chipsets." Clicked="OnChipsetClicked" WidthRequest="300" HorizontalOptions="Center" />
+        <Button x:Name="AboutBtn" Text="About" SemanticProperties.Hint="Go to About." Clicked="OnAboutClicked" WidthRequest="300" HorizontalOptions="Center" />
+        <Button x:Name="EndBtn" Text="Exit" SemanticProperties.Hint="End App." Clicked="OnEndClicked" WidthRequest="300" HorizontalOptions="Center" />
+      </VerticalStackLayout>
+
+    </Grid>
+
+    <!-- Copyright Footer -->
+    <VerticalStackLayout Padding="1,20,1,1" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="End">
+      <Label Text="© Copyright 2025 Cybergon LLC." FontSize="15" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+      <Label Text="All rights reserved." FontSize="15" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
+    </VerticalStackLayout>
+
+  </Grid>
+
+</ContentPage>
