@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Player0
+  - Player1
+  - Player2
+  - Player3
+  - Player4
+  - Player5
+  - Player6
+  - Player7
+  - Player8
+  - Player9
+  - PEEK
+  - STATUS
+  - FOLD
+  - CALL
+  - RAISE
+  - '-'
+  - +
+  - RESET
+  - ALL-IN
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Camera
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

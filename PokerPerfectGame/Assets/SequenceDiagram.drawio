@@ -1,0 +1,554 @@
+<mxfile host="app.diagrams.net" modified="2023-11-07T20:31:03.099Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="haAYQfE0ScyVEtRYA0Gc" version="22.0.8" type="device">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="2117" dy="1077" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-167" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="70" y="785" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-165" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="235" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-163" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;fillStyle=dots;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="930" y="235" width="160" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-161" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="665" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-159" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="785" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-157" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="385" width="160" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-1" value="CardObjectPressed" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="660" y="195" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-33" value="GameManagerActions" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="930" y="195" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-117" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;exitX=0.99;exitY=0.271;exitDx=0;exitDy=0;exitPerimeter=0;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-48" target="qxkllT_lT5Ynzjs4K8pP-38" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1220" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-119" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="514.9999999999998" as="sourcePoint" />
+            <mxPoint x="1080" y="555" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-48" value="GameRoundCheckAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="940" y="485" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-121" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" target="qxkllT_lT5Ynzjs4K8pP-37" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="555" as="sourcePoint" />
+            <mxPoint x="880" y="385" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="820" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-122" value="DealNextEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-121" vertex="1" connectable="0">
+          <mxGeometry x="-0.6904" y="1" relative="1" as="geometry">
+            <mxPoint x="3" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-131" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="615" as="sourcePoint" />
+            <mxPoint x="940" y="715" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="780" y="675" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-132" value="HandEndEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-131" vertex="1" connectable="0">
+          <mxGeometry x="-0.6114" y="1" relative="1" as="geometry">
+            <mxPoint x="21" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-145" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-50" target="qxkllT_lT5Ynzjs4K8pP-110" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-146" value="PullAmountsEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-145" vertex="1" connectable="0">
+          <mxGeometry x="-0.1602" y="-2" relative="1" as="geometry">
+            <mxPoint x="-98" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-50" value="GameRoundEndAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="940" y="545" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-133" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="675" as="sourcePoint" />
+            <mxPoint x="940" y="655" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="820" y="667.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-134" value="DealEndEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-133" vertex="1" connectable="0">
+          <mxGeometry x="-0.3673" y="3" relative="1" as="geometry">
+            <mxPoint x="22" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-52" value="GameShowdownAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="940" y="645" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-54" value="GamePayWinnersAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="940" y="705" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-129" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-56" target="qxkllT_lT5Ynzjs4K8pP-43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-56" value="GameWaitWinnersAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="940" y="765" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-58" value="GameEndAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="940" y="825" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-82" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-38" target="qxkllT_lT5Ynzjs4K8pP-81" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="305" as="targetPoint" />
+            <mxPoint x="760" y="314.58666666666676" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-83" value="BetBeginEvent." style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-82" vertex="1" connectable="0">
+          <mxGeometry x="0.348" y="4" relative="1" as="geometry">
+            <mxPoint x="240" y="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-38" value="GameBetBeginAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="940" y="425" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-34" value="GameWaitingAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="940" y="245" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-71" style="edgeStyle=elbowEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="315" as="sourcePoint" />
+            <mxPoint x="1340" y="315" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-72" value="DealBeginEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-71" vertex="1" connectable="0">
+          <mxGeometry x="-0.4282" y="-2" relative="1" as="geometry">
+            <mxPoint x="66" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-120" value="RoundEndEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-71" vertex="1" connectable="0">
+          <mxGeometry x="-0.4282" y="-2" relative="1" as="geometry">
+            <mxPoint x="-14" y="198" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-43" value="GameHandBeginAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="940" y="305" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-69" style="edgeStyle=elbowEdgeStyle;shape=connector;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="qxkllT_lT5Ynzjs4K8pP-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-70" value="DealBeginEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-69" vertex="1" connectable="0">
+          <mxGeometry x="-0.228" y="-3" relative="1" as="geometry">
+            <mxPoint x="10" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-2" value="OnPointerClick" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="670" y="245" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-37" value="GameDealNextAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="940" y="365" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-80" value="PlayerActions" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="330" y="345" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-84" value="PlayerShowCardsAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="340" y="455" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-85" value="PlayerNextHandAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="340" y="575" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-86" value="PlayerRankHandAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="340" y="515" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-87" value="PlayerFoldAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="340" y="635" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-168" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;fillColor=#f8cecc;dashed=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="425" as="sourcePoint" />
+            <mxPoint x="480" y="805" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="615" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-81" value="PlayerStartBettingAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="340" y="395" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-88" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-81" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="365" as="targetPoint" />
+            <mxPoint x="330" y="415" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="250" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-156" value="FINISHED" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-88" vertex="1" connectable="0">
+          <mxGeometry x="-0.5347" relative="1" as="geometry">
+            <mxPoint x="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-89" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-84" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="365" as="targetPoint" />
+            <mxPoint x="270" y="415" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="230" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-155" value="FINSHED" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-89" vertex="1" connectable="0">
+          <mxGeometry x="-0.6814" y="-1" relative="1" as="geometry">
+            <mxPoint x="4" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-90" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="365" as="targetPoint" />
+            <mxPoint x="340" y="535" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="210" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-154" value="FINISHED" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-90" vertex="1" connectable="0">
+          <mxGeometry x="-0.7451" y="-1" relative="1" as="geometry">
+            <mxPoint x="3" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-91" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-85" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="365" as="targetPoint" />
+            <mxPoint x="350" y="545" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="190" y="485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-153" value="FINISHED" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-91" vertex="1" connectable="0">
+          <mxGeometry x="-0.7955" y="2" relative="1" as="geometry">
+            <mxPoint x="5" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-92" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-87" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="365" as="targetPoint" />
+            <mxPoint x="350" y="605" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="170" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-152" value="FINISHED" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-92" vertex="1" connectable="0">
+          <mxGeometry x="-0.7068" y="4" relative="1" as="geometry">
+            <mxPoint x="39" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-93" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;exitX=0.004;exitY=0.483;exitDx=0;exitDy=0;exitPerimeter=0;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-50" target="qxkllT_lT5Ynzjs4K8pP-84" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="504.65999999999997" as="targetPoint" />
+            <mxPoint x="690" y="505" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="700" y="545" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-170" value="ShowCardsEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-93" vertex="1" connectable="0">
+          <mxGeometry x="-0.5559" y="-2" relative="1" as="geometry">
+            <mxPoint x="59" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-95" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" target="qxkllT_lT5Ynzjs4K8pP-86" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="634.88" as="targetPoint" />
+            <mxPoint x="940" y="735" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="660" y="665" />
+              <mxPoint x="660" y="705.12" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-169" value="RankHandEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-95" vertex="1" connectable="0">
+          <mxGeometry x="-0.4194" y="-8" relative="1" as="geometry">
+            <mxPoint x="132" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-97" style="edgeStyle=elbowEdgeStyle;shape=connector;curved=1;orthogonalLoop=1;jettySize=auto;elbow=horizontal;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-56" target="qxkllT_lT5Ynzjs4K8pP-85" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="564.66" as="targetPoint" />
+            <mxPoint x="740" y="565" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="620" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-166" value="HandBeginEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-97" vertex="1" connectable="0">
+          <mxGeometry x="-0.6005" y="-17" relative="1" as="geometry">
+            <mxPoint x="66" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-101" value="PlayerObject" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="330" y="745" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-102" value="StartBetting&lt;br&gt;EndBetting" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="340" y="795" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-104" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-102" target="qxkllT_lT5Ynzjs4K8pP-48" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="814.57" as="sourcePoint" />
+            <mxPoint x="940" y="455" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-105" value="EndBetEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-104" vertex="1" connectable="0">
+          <mxGeometry x="-0.228" y="-3" relative="1" as="geometry">
+            <mxPoint x="-143" y="77" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-106" value="Fold" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="340" y="855" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-107" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-106" target="qxkllT_lT5Ynzjs4K8pP-87" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="879.57" as="sourcePoint" />
+            <mxPoint x="510" y="685" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-108" value="PlayerFoldEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-107" vertex="1" connectable="0">
+          <mxGeometry x="-0.228" y="-3" relative="1" as="geometry">
+            <mxPoint x="-63" y="50" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-109" value="PotActions" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="625" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-110" value="PotPullAmountsAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1350" y="675" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-114" value="ChangeButtonColor&amp;nbsp;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="70" y="745" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-116" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;fillColor=#f8cecc;dashed=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="815" as="sourcePoint" />
+            <mxPoint x="330" y="765" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="795" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-115" value="ProcessButtons" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="80" y="795" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-124" value="ShowdownEvent" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" edge="1">
+          <mxGeometry x="-0.625" relative="1" as="geometry">
+            <mxPoint x="1080" y="615" as="sourcePoint" />
+            <mxPoint x="1080" y="655" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="755" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-126" value="HandEndEvent" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" target="qxkllT_lT5Ynzjs4K8pP-54" edge="1">
+          <mxGeometry x="-0.6364" relative="1" as="geometry">
+            <mxPoint x="1080" y="675" as="sourcePoint" />
+            <mxPoint x="1080" y="715" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="835" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-128" value="GameEndEvent" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" target="qxkllT_lT5Ynzjs4K8pP-58" edge="1">
+          <mxGeometry x="-0.6364" relative="1" as="geometry">
+            <mxPoint x="1080" y="794.9999999999998" as="sourcePoint" />
+            <mxPoint x="1080" y="835" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="945" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-147" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-137" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="780" as="targetPoint" />
+            <mxPoint x="1350" y="750" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-136" value="PotDetermineWinnersAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1350" y="735" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-181" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-137" target="qxkllT_lT5Ynzjs4K8pP-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1250" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-182" value="PayEndEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-181" vertex="1" connectable="0">
+          <mxGeometry x="-0.6304" y="-37" relative="1" as="geometry">
+            <mxPoint x="13" y="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-137" value="PotPayWinnersAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1350" y="795" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-139" value="FINISHED" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;" parent="1" edge="1">
+          <mxGeometry x="-0.6" relative="1" as="geometry">
+            <mxPoint x="1540" y="645" as="targetPoint" />
+            <mxPoint x="1530" y="695" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1610" y="655" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-140" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;entryX=1.002;entryY=0.249;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="qxkllT_lT5Ynzjs4K8pP-137" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1530" y="815" as="targetPoint" />
+            <mxPoint x="1530" y="755" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1630" y="685" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-143" value="DealBeginEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-140" vertex="1" connectable="0">
+          <mxGeometry x="-0.6553" relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-141" style="edgeStyle=elbowEdgeStyle;shape=connector;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;curved=1;exitX=1.01;exitY=0.799;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-137" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1540" y="645" as="targetPoint" />
+            <mxPoint x="1530" y="815" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1680" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-144" value="FINISHED" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-141" vertex="1" connectable="0">
+          <mxGeometry x="-0.7716" relative="1" as="geometry">
+            <mxPoint x="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-149" value="" style="swimlane;startSize=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=default;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="235" width="180" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-2" value="DealerlMoveCardsAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="qxkllT_lT5Ynzjs4K8pP-149" vertex="1">
+          <mxGeometry x="10" y="10" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-3" value="DealerCardsToPlayersAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="qxkllT_lT5Ynzjs4K8pP-149" vertex="1">
+          <mxGeometry x="10" y="70" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-4" value="DealerFlopAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="qxkllT_lT5Ynzjs4K8pP-149" vertex="1">
+          <mxGeometry x="10" y="130" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-5" value="DealerTurnAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="qxkllT_lT5Ynzjs4K8pP-149" vertex="1">
+          <mxGeometry x="10" y="190" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-6" value="DealerRiverAction" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="qxkllT_lT5Ynzjs4K8pP-149" vertex="1">
+          <mxGeometry x="10" y="250" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-150" style="edgeStyle=elbowEdgeStyle;shape=connector;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-149" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1339" y="397" as="sourcePoint" />
+            <mxPoint x="1080" y="395" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1215" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-151" value="DealEndEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-150" vertex="1" connectable="0">
+          <mxGeometry x="-0.3514" relative="1" as="geometry">
+            <mxPoint x="-42" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-5" value="DealerActions" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="195" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-173" style="edgeStyle=elbowEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="375" as="sourcePoint" />
+            <mxPoint x="1340" y="375" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-174" value="DealBeginEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-173" vertex="1" connectable="0">
+          <mxGeometry x="-0.4282" y="-2" relative="1" as="geometry">
+            <mxPoint x="66" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-179" style="edgeStyle=elbowEdgeStyle;shape=connector;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1340" y="335" as="sourcePoint" />
+            <mxPoint x="1080" y="335" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1215" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-180" value="DealEndEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-179" vertex="1" connectable="0">
+          <mxGeometry x="-0.3514" relative="1" as="geometry">
+            <mxPoint x="-42" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-183" style="edgeStyle=elbowEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;exitX=1.002;exitY=0.044;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="qxkllT_lT5Ynzjs4K8pP-163" target="qxkllT_lT5Ynzjs4K8pP-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="264.58" as="sourcePoint" />
+            <mxPoint x="1340" y="264.58" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1220" y="244.57999999999998" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-184" value="HandEndEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-183" vertex="1" connectable="0">
+          <mxGeometry x="-0.4282" y="-2" relative="1" as="geometry">
+            <mxPoint x="66" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qxkllT_lT5Ynzjs4K8pP-185" value="PlayerNextEvent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="qxkllT_lT5Ynzjs4K8pP-183" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-80" y="231" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
