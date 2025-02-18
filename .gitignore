@@ -326,7 +326,9 @@ paket-files/
 .idea/
 *.sln.iml
 
-PokerPerfectGame/Library/
-/PokerPerfectGame/Temp
 *.db-wal
 *.db-shm
+/PokerPerfectGame/Library/ShaderCache
+/PokerPerfectGame/Library/StateCache
+/PokerPerfectGame/Library/PackageCache
+/PokerPerfectGame/Library/APIUpdater/ConfigurationCache
