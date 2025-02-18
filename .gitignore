@@ -330,3 +330,6 @@ paket-files/
 *.sln.iml
 
 PokerPerfectGame/Library/
+/PokerPerfectGame/Temp
+*.db-wal
+*.db-shm
