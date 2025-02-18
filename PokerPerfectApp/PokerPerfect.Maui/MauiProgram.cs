@@ -1,5 +1,5 @@
 ﻿using CommunityToolkit.Maui;
-//using PokerPerfect.Plugins.DataStore.WebApi;
+using PokerPerfect.Plugins.DataStore.WebApi;
 using PokerPerfect.UseCases.PluginInterfaces;
 
 using PokerPerfect.Maui.ViewModels.Contacts;
@@ -69,7 +69,7 @@ public static class MauiProgram
     builder.Logging.AddDebug();
 #endif
     // Contacts
-//    builder.Services.AddSingleton<IContactRepository, ContactWebApiRepository>();
+    builder.Services.AddSingleton<IContactRepository, ContactWebApiRepository>();
     builder.Services.AddSingleton<IViewContactsUseCase, ViewContactsUseCase>();
     builder.Services.AddSingleton<IViewContactUseCase, ViewContactUseCase>();
     builder.Services.AddTransient<IEditContactUseCase, EditContactUseCase>();
@@ -82,7 +82,7 @@ public static class MauiProgram
     builder.Services.AddSingleton<AddContactPage_MVVM>();
 
     // Games
-//    builder.Services.AddSingleton<IGameRepository, GameWebApiRepository>();
+    builder.Services.AddSingleton<IGameRepository, GameWebApiRepository>();
     builder.Services.AddSingleton<IViewGamesUseCase, ViewGamesUseCase>();
     builder.Services.AddSingleton<IViewGameUseCase, ViewGameUseCase>();
     builder.Services.AddTransient<IEditGameUseCase, EditGameUseCase>();
@@ -95,7 +95,7 @@ public static class MauiProgram
     builder.Services.AddSingleton<AddGamePage_MVVM>();
 
     // Players
-//    builder.Services.AddSingleton<IPlayerRepository, PlayerWebApiRepository>();
+    builder.Services.AddSingleton<IPlayerRepository, PlayerWebApiRepository>();
     builder.Services.AddSingleton<IViewPlayersUseCase, ViewPlayersUseCase>();
     builder.Services.AddSingleton<IViewPlayerUseCase, ViewPlayerUseCase>();
     builder.Services.AddTransient<IEditPlayerUseCase, EditPlayerUseCase>();
@@ -109,7 +109,7 @@ public static class MauiProgram
     builder.Services.AddSingleton<AddPlayerPage_MVVM>();
 
     // Tables
-//    builder.Services.AddSingleton<ITableRepository, TableWebApiRepository>();
+    builder.Services.AddSingleton<ITableRepository, TableWebApiRepository>();
     builder.Services.AddSingleton<IViewTablesUseCase, ViewTablesUseCase>();
     builder.Services.AddSingleton<IViewTableUseCase, ViewTableUseCase>();
     builder.Services.AddTransient<IEditTableUseCase, EditTableUseCase>();
@@ -123,7 +123,7 @@ public static class MauiProgram
     builder.Services.AddSingleton<AddTablePage_MVVM>();
 
     // Blinds
-//    builder.Services.AddSingleton<IBlindRepository, BlindWebApiRepository>();
+    builder.Services.AddSingleton<IBlindRepository, BlindWebApiRepository>();
     builder.Services.AddSingleton<IViewBlindsUseCase, ViewBlindsUseCase>();
     builder.Services.AddSingleton<IViewBlindUseCase, ViewBlindUseCase>();
     builder.Services.AddTransient<IEditBlindUseCase, EditBlindUseCase>();
@@ -137,7 +137,7 @@ public static class MauiProgram
     builder.Services.AddSingleton<AddBlindPage_MVVM>();
 
     // Payouts
-//    builder.Services.AddSingleton<IPayoutRepository, PayoutWebApiRepository>();
+    builder.Services.AddSingleton<IPayoutRepository, PayoutWebApiRepository>();
     builder.Services.AddSingleton<IViewPayoutsUseCase, ViewPayoutsUseCase>();
     builder.Services.AddSingleton<IViewPayoutUseCase, ViewPayoutUseCase>();
     builder.Services.AddTransient<IEditPayoutUseCase, EditPayoutUseCase>();
@@ -165,7 +165,7 @@ public static class MauiProgram
     builder.Services.AddSingleton<AddChipsetPage_MVVM>();
 
     // Chips
-//    builder.Services.AddSingleton<IChipRepository, ChipWebApiRepository>();
+    builder.Services.AddSingleton<IChipRepository, ChipWebApiRepository>();
     builder.Services.AddSingleton<IViewChipsUseCase, ViewChipsUseCase>();
     builder.Services.AddSingleton<IViewChipUseCase, ViewChipUseCase>();
     builder.Services.AddTransient<IEditChipUseCase, EditChipUseCase>();
