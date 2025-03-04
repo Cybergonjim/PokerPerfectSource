@@ -13,6 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{EAFB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokerPerfect.Plugins.DataStore.WebApi", "Plugins\PokerPerfect.Plugins.DataStore.WebApi\PokerPerfect.Plugins.DataStore.WebApi.csproj", "{E27C6FF1-5C54-496E-8B83-A165BB08878B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE8382D4-D533-402D-8024-AF260A01405C}"
+	ProjectSection(SolutionItems) = preProject
+		..\global.json = ..\global.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

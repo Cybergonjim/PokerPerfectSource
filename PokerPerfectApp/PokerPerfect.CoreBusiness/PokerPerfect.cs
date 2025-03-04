@@ -190,7 +190,6 @@ namespace PokerPerfect.CoreBusiness
 			}
 		}
 
-
 		static private Color GetColorFromByte(Color color, byte value, ColorCode colorCode)
 		{
 			color.ToRgb(out byte r, out byte g, out byte b);

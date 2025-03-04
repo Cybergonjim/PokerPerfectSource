@@ -1,11 +1,9 @@
-﻿using System.Net;
-
-namespace PokerPerfect.Plugins.DataStore.WebApi
+﻿namespace PokerPerfect.Plugins.DataStore.WebApi
 {
   public class Constants
   {
     private static string _webApiBaseUrl;
-    private const string WebApiUrlKey = "WebApiBaseUrl"; // Key for stored API URL
+    public const string WebApiUrlKey = "WebApiBaseUrl"; // Key for stored API URL
 
     public static string WebApiBaseUrl
     {
@@ -14,7 +12,7 @@ namespace PokerPerfect.Plugins.DataStore.WebApi
         if (_webApiBaseUrl == null)
         {
           // Retrieve stored IP address from Preferences
-          string storedIp = Preferences.Get(WebApiUrlKey, string.Empty);
+          string storedIp = Preferences.Get(WebApiUrlKey, "172.22.128.1");
 
           //if (DeviceInfo.Platform == DevicePlatform.Android)
           //{
